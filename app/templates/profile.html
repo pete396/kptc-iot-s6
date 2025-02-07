@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Welcome, {{ user.name }}!</h1>
+        
+        <div class="profile-details">
+            <p><strong>Name:</strong> {{ user.name }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Phone Number:</strong> {{ user.phone_number }}</p>
+        </div>
+        
+        <!-- Uncomment the following line if you want to show a profile picture -->
+        <!-- <img src="{{ user.profile_pic.url }}" alt="Profile Picture"> -->
+
+        <div class="actions">
+            <a href="/editprofile/" class="btn">Edit Profile</a>
+        </div>
+    </div>
+
+    <!-- Optionally, you can include error or success messages -->
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                <p class="alert">{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>

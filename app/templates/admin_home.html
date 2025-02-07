@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 45%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #555;
+        }
+        .logout-btn {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .logout-btn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Admin Home</h1>
+    </div>
+
+    <div class="container">
+        <div class="dashboard">
+            <div class="card">
+                <h3>Dashboard</h3>
+                <a href="/user_list/">
+                    <p>Manage your application settings and view statistics.</p>
+
+
+                </a>
+            </div>
+            <div class="card">
+                <h3>Users</h3>
+                <p>View and manage all users who are registered on the platform.</p>
+            </div>
+            <div class="card">
+                <h3>Settings</h3>
+                <p>Update and configure system settings as needed.</p>
+            </div>
+            <div class="card">
+                <h3>Reports</h3>
+                <p>Generate reports for analysis and decision-making.</p>
+            </div>
+        </div>
+      
+    </div>
+
+</body>
+</html>
