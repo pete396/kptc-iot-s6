@@ -3,7 +3,7 @@ Smart City Surveillance with IOT
 
 # Collaborators
 
-- [Main](https:github.com/v4ish)
+- [Main](https://www.github.com/v4ish)
 
 # Usage 
 
